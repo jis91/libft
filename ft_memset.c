@@ -6,12 +6,12 @@
 /*   By: jstrasse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 11:03:01 by jstrasse          #+#    #+#             */
-/*   Updated: 2025/10/01 16:32:41 by jstrasse         ###   ####lausanne.ch   */
+/*   Updated: 2025/10/13 19:08:20 by jstrasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*#include <string.h>*/ /* Necessary to test the real one*/
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*tmp;

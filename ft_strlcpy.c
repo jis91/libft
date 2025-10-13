@@ -6,11 +6,12 @@
 /*   By: jstrasse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 11:05:18 by jstrasse          #+#    #+#             */
-/*   Updated: 2025/10/01 16:36:55 by jstrasse         ###   ####lausanne.ch   */
+/*   Updated: 2025/10/13 19:32:04 by jstrasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*#include <string.h>*/ /*Necessary to test the real one*/
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t dsize)
 {
@@ -38,10 +39,14 @@ int	main(void)
 	char	buffer[8];
 	char	*msg;
 	size_t	len;
+	size_t	reallen;
 
 	len = 0;
+	reallen = 0;
 	msg = "Hello There !";
 	len = ft_strlcpy(buffer, msg, sizeof(buffer));
-	printf("Source length is %zu,\nBuffer : %s\n", len, buffer);
+	reallen = strlcpy(buffer, msg, sizeof(buffer));
+	printf("FT_STRLCPY; Source length is %zu,\nBuffer : %s\n", len, buffer);
+	printf("STRLCPY; Source length is %zu,\nBuffer : %s\n", reallen, buffer);
 	return (0);
 }*/

@@ -6,12 +6,12 @@
 /*   By: jstrasse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 14:08:11 by jstrasse          #+#    #+#             */
-/*   Updated: 2025/10/01 16:36:17 by jstrasse         ###   ####lausanne.ch   */
+/*   Updated: 2025/10/13 19:31:57 by jstrasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*#include <string.h>*/ /*Necessary to test the real one*/
 char	*ft_strdup(const char *src)
 {
 	size_t	len;
@@ -38,11 +38,14 @@ char	*ft_strdup(const char *src)
 /*
 int	main(void)
 {
-	char *src;
-	char *result;
+	char	*src;
+	char	*result;
+	char	*trueresult;
 
-	src = "Hello World Here I Am";
+	src = NULL;
 	result = ft_strdup(src);
-	printf("%s\n", result);
+	trueresult = strdup(src);
+	printf("FT_STRDUP : %s\n", result);
+	printf("STRDUP : %s\n", trueresult);
 	return (0);
-}*/	
+}*/

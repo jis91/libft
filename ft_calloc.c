@@ -6,7 +6,7 @@
 /*   By: jstrasse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 14:28:59 by jstrasse          #+#    #+#             */
-/*   Updated: 2025/10/01 16:35:48 by jstrasse         ###   ####lausanne.ch   */
+/*   Updated: 2025/10/13 16:40:27 by jstrasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,16 @@ void	*ft_calloc(size_t nmemb, size_t size)
 int	main(void)
 {
 	int	*test;
+	int	*testvrai;
 	int	i;
 
 	i = 0;
+	testvrai = (int *)calloc(5, sizeof(int));
+	if (testvrai == NULL)
+	{
+		printf("memory allocation failed");
+		return (1);
+	}
 	test = (int *)ft_calloc(5, sizeof(int));
 	if (test == NULL)
 	{
@@ -41,9 +48,11 @@ int	main(void)
 	}
 	while (i < 5)
 	{
+		printf("Calloc[%d] = %d\n", i, testvrai[i]);
 		printf("test[%d] = %d\n", i, test[i]);
 		i++;
 	}
 	free(test);
+	free(testvrai);
 	return (0);
 }*/

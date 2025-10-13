@@ -6,12 +6,12 @@
 /*   By: jstrasse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 12:46:55 by jstrasse          #+#    #+#             */
-/*   Updated: 2025/10/01 16:32:00 by jstrasse         ###   ####lausanne.ch   */
+/*   Updated: 2025/10/13 17:03:28 by jstrasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*#include <string.h>*/ /* Necessary to test the real one*/
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*s1tmp;
@@ -39,6 +39,7 @@ int	main(void)
 
 	msg = "Hello";
 	test = "Hfllo";
-	printf("%d\n", ft_memcmp(msg, test, 5));
+	printf("%d, FT_MEMCMP\n", ft_memcmp(msg, test, 5));
+	printf("%d, MEMCMP\n", memcmp(msg, test, 5));
 	return (0);
 }*/

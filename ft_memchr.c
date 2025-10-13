@@ -6,12 +6,12 @@
 /*   By: jstrasse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 12:18:10 by jstrasse          #+#    #+#             */
-/*   Updated: 2025/10/01 16:32:26 by jstrasse         ###   ####lausanne.ch   */
+/*   Updated: 2025/10/13 19:31:21 by jstrasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*#include <string.h>*/ /* Necessary to test the real one*/
 void	*ft_memchr(const void *src, int c, size_t n)
 {
 	size_t			i;
@@ -34,12 +34,20 @@ int	main(void)
 {
 	char	*src;
 	char	*result;
+	char	*trueresult;
+	
 	src = "Hello Gangsta";
 	result = ft_memchr(src, 'g', 12);
+	trueresult = memchr(src, 'g', 12);
 	if (result)
-		printf("Found: '%c' at position %ld\n", *result, result - src);
+		printf("FT_MEMCHR; Found: '%c' at position %ld\n",
+		 *result, result - src);
+	else
+		printf("Character not found in source\n");
+	if (trueresult)
+		printf("MEMCHR; Found: '%c' at position %ld\n",
+		 *trueresult, trueresult - src);
 	else
 		printf("Character not found in source\n");
 	return (0);
-}
-*/
+}*/

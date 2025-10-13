@@ -6,12 +6,12 @@
 /*   By: jstrasse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 10:49:21 by jstrasse          #+#    #+#             */
-/*   Updated: 2025/10/01 16:30:46 by jstrasse         ###   ####lausanne.ch   */
+/*   Updated: 2025/10/13 16:56:20 by jstrasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*#include <ctype.h>*/ /* Necessary to test the real isalpha*/
 int	ft_isalpha(int c)
 {
 	if (c >= 65 && c <= 90)
@@ -31,8 +31,11 @@ int	main(void)
 	c = 'a';
 	d = 'F';
 	e = '0';
-	printf("%d\n", ft_isalpha(c));
-	printf("%d\n", ft_isalpha(d));
-	printf("%d\n", ft_isalpha(e));
+	printf("%d, my ft_isalpha\n", ft_isalpha(c));
+	printf("%d, isalpha\n", isalpha(c));
+	printf("%d, my ft_isalpha\n", ft_isalpha(d));
+	printf("%d, isalpha\n", isalpha(d));
+	printf("%d, my ft_isalpha\n", ft_isalpha(e));
+	printf("%d, isalpha\n", isalpha(e));
 	return (0);
 }*/

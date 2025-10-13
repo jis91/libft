@@ -6,12 +6,12 @@
 /*   By: jstrasse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 11:03:51 by jstrasse          #+#    #+#             */
-/*   Updated: 2025/10/08 10:08:44 by jstrasse         ###   ####lausanne.ch   */
+/*   Updated: 2025/10/13 19:32:54 by jstrasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*#include <string.h>*/ /*Necessary to test the real one*/
 char	*ft_strchr(const char *src, int c)
 {
 	size_t	i;
@@ -34,14 +34,20 @@ int	main(void)
 {
 	char	*src;
 	char	*result;
+	char	*trueresult;
 
-	src = "Hello Gangsta";
-	result = ft_strchr(src, 'b');	
-
+	src = NULL;
+	result = ft_strchr(src, 'g');	
+	trueresult = strchr(src, 'g');
 	if (result)
-		printf("Found: '%c' at position %ld\n", *result, result - src);
+		printf("FT_STRCHR; Found: '%c' at position %ld\n",
+		 *result, result - src);
+	else 
+		printf("Character not found in source\n");
+	if (trueresult)
+		printf("STRCHR; Found: '%c' at position %ld\n",
+		 *trueresult, trueresult - src);
 	else 
 		printf("Character not found in source\n");
 	return (0);
-}
-*/
+}*/

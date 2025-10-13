@@ -6,11 +6,12 @@
 /*   By: jstrasse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 10:49:43 by jstrasse          #+#    #+#             */
-/*   Updated: 2025/10/08 10:09:41 by jstrasse         ###   ####lausanne.ch   */
+/*   Updated: 2025/10/13 16:56:15 by jstrasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*#include <ctype.h>*/ /* Necessary to test the real isascii*/
 
 int	ft_isascii(int c)
 {
@@ -27,7 +28,9 @@ int	main(void)
 
 	c ='@';
 	a = 128;
-	printf("%d\n",ft_isascii(c));
-	printf("%d\n",ft_isascii(a));
+	printf("%d, my ft_isascii\n",ft_isascii(c));
+	printf("%d, isascii\n",isascii(c));
+	printf("%d, my ft_isascii\n",ft_isascii(a));
+	printf("%d, isascii\n",isascii(a));
 	return (0);
 }*/

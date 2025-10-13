@@ -6,11 +6,12 @@
 /*   By: jstrasse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 11:26:44 by jstrasse          #+#    #+#             */
-/*   Updated: 2025/10/01 16:37:19 by jstrasse         ###   ####lausanne.ch   */
+/*   Updated: 2025/10/13 19:32:10 by jstrasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*#include <string.h>*/ /*Necessary to test the real one*/
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -35,6 +36,8 @@ int	main(void)
 	
 	msg = "Hello";
 	test = "Helao";
-	printf("%d\n", ft_strncmp(msg, test, 4));
+	printf("FT_STRNCMP; %d\n", ft_strncmp(msg, test, 4));
+	printf("STRNCMP; %d\n", strncmp(msg, test, 4));
+	
 	return (0);
 }*/

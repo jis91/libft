@@ -6,11 +6,12 @@
 /*   By: jstrasse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 11:05:35 by jstrasse          #+#    #+#             */
-/*   Updated: 2025/10/01 16:34:17 by jstrasse         ###   ####lausanne.ch   */
+/*   Updated: 2025/10/13 19:09:24 by jstrasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+/*#include <ctype.h>*/ /* Necessary to test the real tolower*/
 
 int	ft_tolower(int c)
 {
@@ -24,6 +25,7 @@ int	main(void)
 	char	c;
 
 	c = 66;
-	printf("%d\n", ft_tolower(c));
+	printf("FT_TOLOWER; %d\n", ft_tolower(c));
+	printf("TOLOWER; %d\n", tolower(c));
 	return (0);
 }*/

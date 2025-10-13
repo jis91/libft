@@ -6,9 +6,10 @@
 /*   By: jstrasse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 13:44:17 by jstrasse          #+#    #+#             */
-/*   Updated: 2025/10/01 16:30:18 by jstrasse         ###   ####lausanne.ch   */
+/*   Updated: 2025/10/13 16:29:48 by jstrasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_atoi(const char *nptr)
@@ -43,8 +44,12 @@ int	main(void)
 {
 	char	*test;
 	int	result;
+	int	trueres;
+
 	test = "   	-999";
 	result = ft_atoi(test);
-	printf("%d\n", result);
+	trueres = atoi(test);
+	printf("%d is ft_atoi,\n", result);
+	printf("%d is real atoi\n", trueres);
 	return (0);
 }*/

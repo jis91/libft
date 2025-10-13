@@ -6,11 +6,12 @@
 /*   By: jstrasse <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/01 10:46:50 by jstrasse          #+#    #+#             */
-/*   Updated: 2025/10/01 16:34:32 by jstrasse         ###   ####lausanne.ch   */
+/*   Updated: 2025/10/13 19:36:02 by jstrasse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <strings.h> /* Necessary to try the real bzero*/
 
 void	ft_bzero(void *s, size_t n)
 {
@@ -28,14 +29,18 @@ void	ft_bzero(void *s, size_t n)
 /*
 int	main(void)
 {
-	char	buffer[20] = "test1";
-	char	buffer1[20] = "test2";
+	char	buffer[20] = "Hello World";
+	char	buffer1[20] = "This is Bzero";
 
-	printf("buffer before bzero : %s\n", buffer);
-	printf("buffer1 before ft_bzero:  %s\n", buffer1);
+	printf("buffer before bzero : %s, %ld is length\n",
+	 buffer, ft_strlen(buffer));
+	printf("buffer1 before ft_bzero:  %s, %ld is length\n",
+	 buffer1, ft_strlen(buffer1));
 	bzero(buffer, 4);
 	ft_bzero(buffer1, 5);
-	printf("buffer after bzero : %s\n", buffer);
-	printf("buffer1 after ft_bzero: %s\n", buffer1);
+	printf("buffer after bzero : %s, %ld is length\n",
+	 buffer, ft_strlen(buffer));
+	printf("buffer1 after ft_bzero: %s, %ld is length\n",
+	 buffer1, ft_strlen(buffer1));
 	return (0);
 }*/
